@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vertexsms": {
+      "type": "http",
+      "url": "https://mcp.vertexsms.com/mcp"
+    }
+  }
+}

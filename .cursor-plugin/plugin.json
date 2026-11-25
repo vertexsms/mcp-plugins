@@ -1,0 +1,31 @@
+{
+  "name": "vertexsms",
+  "displayName": "VertexSMS",
+  "version": "1.0.0",
+  "description": "Send SMS, track delivery, check prices and balance, validate phone numbers and manage Sender IDs on your VertexSMS account.",
+  "author": {
+    "name": "VertexSMS",
+    "email": "support@vertexsms.com"
+  },
+  "homepage": "https://vertexsms.com/en/mcp/quickstart",
+  "repository": "https://github.com/vertexsms/mcp-plugins",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "vertexsms",
+    "sms",
+    "messaging",
+    "sender id",
+    "hlr",
+    "phone numbers",
+    "mcp"
+  ],
+  "category": "integrations",
+  "tags": [
+    "vertexsms",
+    "sms",
+    "messaging",
+    "mcp"
+  ],
+  "mcpServers": "./mcp.json"
+}
