@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "vertexsms",
+  "version": "1.0.0",
+  "description": "Send SMS, track delivery, check prices and balance, validate phone numbers and manage Sender IDs on your VertexSMS account.",
+  "author": {
+    "name": "VertexSMS",
+    "email": "support@vertexsms.com",
+    "url": "https://vertexsms.com"
+  },
+  "homepage": "https://vertexsms.com/en/mcp/quickstart",
+  "repository": "https://github.com/vertexsms/mcp-plugins",
+  "license": "MIT",
+  "keywords": ["vertexsms", "sms", "messaging", "sender id", "hlr", "phone numbers", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "VertexSMS",
+        "shortDescription": "Send SMS and check delivery",
+        "longDescription": "VertexSMS is a business SMS platform. This plugin connects the assistant to your own VertexSMS account.\n\nMessaging\n- Send an SMS to one recipient, now or at a scheduled time, and check whether it was delivered.\n\nPrices and balance\n- Look up SMS prices per country and operator, in EUR.\n- Check your account balance.\n\nPhone numbers\n- Convert numbers to international format and tell mobile numbers from landlines.\n- Look up mobile prefixes and network codes (MCC/MNC) of a country.\n- Run a live HLR lookup to see the current operator of a number and whether it was ported.\n\nSender IDs\n- List the Sender IDs on your account and their status.\n- Submit a new sender name for approval, or register your own mobile number as a sender and confirm it with a PIN.\n\nCost and confirmation\nSending an SMS and running an HLR lookup are billed to your VertexSMS account at your usual prices, and messages go to real phones. These tools, and the tools that change your account, are marked as such, so the assistant asks you to confirm before each call. Looking up prices, balance, delivery status, Sender IDs and number formats is free and read-only.\n\nRequirements\nYou need a VertexSMS account. Accounts are opened on request at vertexsms.com. You connect by signing in with your VertexSMS account and approving the permissions you want to grant; no API key is needed.\n\nData\nThe server is a stateless bridge to the VertexSMS API. It stores no messages, phone numbers or credentials.",
+        "developerName": "VertexSMS",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": [
+          "How much does it cost to send an SMS to Germany and to the UK?",
+          "Clean up this list of numbers and tell me which are not mobile.",
+          "Send \"Your table is ready\" from MyShop to +37069912345 and tell me if it was delivered."
+        ],
+        "brandColor": "#2D2B36",
+        "logo": "./assets/logo.png",
+        "websiteURL": "https://vertexsms.com",
+        "supportURL": "https://vertexsms.com/en/mcp/support",
+        "privacyPolicyURL": "https://vertexsms.com/en/privacy",
+        "termsOfServiceURL": "https://vertexsms.com/en/terms"
+      }
+    }
+  }
+}

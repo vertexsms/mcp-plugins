@@ -25,6 +25,10 @@ Send SMS, track delivery, check prices and balance, validate phone numbers and m
 
 Auth is OAuth. Cursor prompts for VertexSMS sign-in when the plugin connects, and you approve the list of permissions you want to grant. There is no client ID, API key or secret to configure.
 
+## Other clients
+
+The `openai/` folder is the same connection packaged for the ChatGPT and Codex plugin directory, in the [Agent Plugins](https://agent-plugins.org) format: `plugin.json`, `mcp.json` and `assets/logo.png`. The server and the sign-in are the same as above.
+
 ## Before you connect
 
 You need a VertexSMS account. Accounts are opened on request at [vertexsms.com](https://vertexsms.com/en/register-mcp).
